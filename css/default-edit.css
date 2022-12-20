@@ -1,3 +1,39 @@
+/* buttons */
+.default-button {
+    min-height: 56px;
+    padding: 10px 27px;
+    font-size: 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--theme__color1);
+    color: #fff;
+    transition: 0.3s;
+}
+.default-button .caret {
+    margin: 0 0 0 17px;
+}
+.default-button:hover {
+    background: #ff4800;
+}
+
+.default-button.default-button--theme2 {
+    background: var(--theme__color2);
+}
+.default-button.default-button--theme2:hover {
+    background: #2768ff;
+}
+
+.default-button.default-button--white {
+    background: #fff;
+    color: var(--theme__color2);
+}
+/* buttons-end */
+
+
 /* small-tools */
 .underline {
     text-decoration: underline !important;
@@ -205,14 +241,46 @@
 
 
 
+/* preloader */
+/* --preloader-- */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow: hidden;
+    background: #fff;
+  }
+  #preloader:before {
+    content: "";
+    position: fixed;
+    top: calc(50% - 30px);
+    left: calc(50% - 30px);
+    border: 6px solid var(--theme__color1);
+    border-top-color: #e2eefd;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    -webkit-animation: animate-preloader 1s linear infinite;
+    animation: animate-preloader 1s linear infinite;
+  }
+  @-webkit-keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  @keyframes animate-preloader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+  }
+  /* --preloader-end-- */
 
-
-/* important */
-#scrollUp {
-    background-image: url("../images/base/top.png");
-    bottom: 20px;
-    right: 20px;
-    width: 38px;    /* Width of image */
-    height: 38px;   /* Height of image */
-    color: transparent;
-}
