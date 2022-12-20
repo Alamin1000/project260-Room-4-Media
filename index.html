@@ -8,8 +8,9 @@
 	<link rel="icon" href="images/fav-icon.png">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link href="https://kit-pro.fontawesome.com/releases/v5.15.2/css/pro.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/magnific-popup.css">
 	<link rel="stylesheet" href="css/default-edit.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="style.css"> 
 	<link rel="stylesheet" type="text/css" href="css/responsive.css">
 	<!--End ALL STYLESHEET -->
 </head>
@@ -155,21 +156,26 @@
 		<main>
 			<!-- hero-section -->
 			<section class="hero-section">
+				<div class="hero-video-bg">
+					<video src="images/ship-in-sea.mp4" muted loop autoplay></video>
+				</div>
 				<div class="container">
 					<div class="hero-section__inner">
 						<div class="hero__content">
 							<h1 class="h1">
 								<span class="color-theme1 fw-600">Outsource</span>
-								your creative production requirements, stress-free!
+								your creative production requirements, <span class="color-theme1 fw-600">stress-free!</span>
 							</h1>
-							<h3>Scale & reduce team size as needed.</h3>
+							<h3>Scale & reduce team size as needed</h3>
 
 							<div class="hero__content__bottom-buttons">
-								<a href="#" class="default-button">
+								<!-- working video example https://vimeo.com/148198462 
+									 provided video https://vimeo.com/769970059/5ab352fbf4-->
+								<a href="https://vimeo.com/769970059/5ab352fbf4" class="default-button popup-video">
 									<span class="txt">Watch reel</span>
 									<i class="fa fa-caret-right caret"></i>
 								</a>
-								<a href="#" class="default-button default-button--theme2">View service plans</a>
+								<a href="#plan-section" class="default-button default-button--theme2">View service plans</a>
 							</div>
 						</div>
 					</div>
@@ -264,7 +270,7 @@
 								<div class="creative__rml-menu">
 									<ul class="nav">
 										<li>
-											<a href="#" class="active">
+											<a href="#" class="active" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-1">
 												<div class="icon">
 													<img src="images/creative__rml-menu-1.png" alt="">
 												</div>
@@ -272,7 +278,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-2">
 												<div class="icon">
 													<img src="images/creative__rml-menu-2.png" alt="">
 												</div>
@@ -280,7 +286,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-3">
 												<div class="icon">
 													<img src="images/creative__rml-menu-3.png" alt="">
 												</div>
@@ -288,7 +294,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-4">
 												<div class="icon">
 													<img src="images/creative__rml-menu-4.png" alt="">
 												</div>
@@ -296,7 +302,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-5">
 												<div class="icon">
 													<img src="images/creative__rml-menu-5.png" alt="">
 												</div>
@@ -304,7 +310,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-6">
 												<div class="icon">
 													<img src="images/creative__rml-menu-6.png" alt="">
 												</div>
@@ -312,7 +318,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-7">
 												<div class="icon">
 													<img src="images/creative__rml-menu-7.png" alt="">
 												</div>
@@ -320,7 +326,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-8">
 												<div class="icon">
 													<img src="images/creative__rml-menu-8.png" alt="">
 												</div>
@@ -328,7 +334,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-9">
 												<div class="icon">
 													<img src="images/creative__rml-menu-9.png" alt="">
 												</div>
@@ -336,7 +342,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-10">
 												<div class="icon">
 													<img src="images/creative__rml-menu-10.png" alt="">
 												</div>
@@ -344,7 +350,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-11">
 												<div class="icon">
 													<img src="images/creative__rml-menu-11.png" alt="">
 												</div>
@@ -352,7 +358,7 @@
 											</a>
 										</li>
 										<li>
-											<a href="#">
+											<a href="#" data-bs-toggle="tab" data-bs-target="#creative__rmr__image_pan-12">
 												<div class="icon">
 													<img src="images/creative__rml-menu-12.png" alt="">
 												</div>
@@ -363,9 +369,93 @@
 								</div>
 							</div>
 							<div class="creative__rm__right">
-								<div class="creative__rmr__image">
-									<img src="images/creative__rmr__image.png" alt="">
+								<div class="creative__rmr__image_tab-content tab-content">
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade show active" id="creative__rmr__image_pan-1">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-1.png" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-2">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-2.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-3">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-3.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-4">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-4.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-5">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-5.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-6">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-6.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-7">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-7.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-8">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-8.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-9">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-9.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-10">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-10.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-11">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-11.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
+									<!-- creative__rmr__image_tab-pane -->
+									<div class="creative__rmr__image_tab-pane tab-pane fade" id="creative__rmr__image_pan-12">
+										<div class="creative__rmr__image">
+											<img src="images/creative__rmr__image-12.jpg" alt="">
+										</div>
+									</div>
+									<!-- creative__rmr__image_tab-pane-end -->
 								</div>
+								
 							</div>
 						</div>
 					</div>
@@ -437,7 +527,7 @@
 
 
 			<!-- plan-section -->
-			<section class="plan-section pb-0">
+			<section class="plan-section pb-0" id="plan-section">
 				<div class="container">
 					<div class="plan-section__inner">
 
@@ -465,7 +555,7 @@
 									<div class="plan__dt-box__data-g">
 										<h4>Benefits:</h4>
 										<ul class="check-ul">
-											<li>You will only pay for production hours. Project management, creative direction and quality assurance are all included in the hourly rate.</li>
+											<li>You will only pay for production hours. <br> Project management, creative direction and quality assurance are all included in the hourly rate.</li>
 											<li>All work is created and managed by our full-time employees.</li>
 											<li>Unused hours can be carried forward to the following months.</li>
 										</ul>
@@ -531,7 +621,11 @@
 												<!-- plan-single-end -->
 											</div>
 											<div class="plans_wrapper_box_bottom">
-												<a href="#" class="button default-button w-100">Book a Discovery Call</a>
+												<!-- Calendly inline widget begin -->
+												<!-- <div class="calendly-inline-widget" data-url="https://calendly.com/jeffgalea/meet?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
+												<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
+												<!-- Calendly inline widget end -->
+												<a href="https://calendly.com/jeffgalea/meet?hide_event_type_details=1&hide_gdpr_banner=1" class="button default-button w-100">Book a Discovery Call</a>
 											</div>
 										</div>
 									</div>
@@ -550,8 +644,8 @@
 														</ul>
 													</div>
 													<div class="plan__single__right">
-														<p class="price">$900/<span class="ti-pe">mo</span></p>
-														<p class="price-sm">$60 p/h</p>
+														<p class="price">$4320/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$54 p/h</p>
 													</div>
 												</div>
 												<!-- plan-single-end -->
@@ -564,8 +658,8 @@
 														</ul>
 													</div>
 													<div class="plan__single__right">
-														<p class="price">$1400/<span class="ti-pe">mo</span></p>
-														<p class="price-sm">$50 p/h</p>
+														<p class="price">$7200/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$48 p/h</p>
 													</div>
 												</div>
 												<!-- plan-single-end -->
@@ -578,14 +672,18 @@
 														</ul>
 													</div>
 													<div class="plan__single__right">
-														<p class="price">$2000/<span class="ti-pe">mo</span></p>
-														<p class="price-sm">$45 p/h</p>
+														<p class="price">$10,500/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$42 p/h</p>
 													</div>
 												</div>
 												<!-- plan-single-end -->
 											</div>
 											<div class="plans_wrapper_box_bottom">
-												<a href="#" class="button default-button w-100">Book a Discovery Call</a>
+												<!-- Calendly inline widget begin -->
+												<!-- <div class="calendly-inline-widget" data-url="https://calendly.com/jeffgalea/meet?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:630px;"></div>
+												<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script> -->
+												<!-- Calendly inline widget end -->
+												<a href="https://calendly.com/jeffgalea/meet?hide_event_type_details=1&hide_gdpr_banner=1" class="button default-button w-100">Book a Discovery Call</a>
 											</div>
 										</div>
 									</div>
@@ -610,7 +708,8 @@
 						<div class="cta-banner__content">
 							<h2>Looking for a full-time dedicated team?</h2>
 							<p>Select talent required. Specify the number of hours required per month. Pay monthly</p>
-							<a href="#" class="bottom-button default-button default-button--white">Get an estimate</a>
+							<!-- <iframe frameborder="0" style="height:500px;width:99%;border:none;" src='https://forms.zohopublic.com/room4media/form/Room4teams/formperma/2YOfVDJV3UF7AYx6i0McBfme67foEXzDPZPADgPMXKQ'></iframe> -->
+							<a target="_blank" href="https://forms.zohopublic.com/room4media/form/Room4teams/formperma/2YOfVDJV3UF7AYx6i0McBfme67foEXzDPZPADgPMXKQ" class="bottom-button default-button default-button--white">Get an estimate</a>
 						</div>
 					</div>
 				</div>
@@ -748,8 +847,11 @@
 
 
 	<!-- js -->
-	<script src="js/jquery-3.6.0.min.js"></script>
+	<!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
+	<!-- <script src="js/jquery.magnific-popup.min.js"></script> -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.0.0/jquery.magnific-popup.min.js"></script>
 	<script src="js/main.js"></script>
 	<!-- End All Js -->
 	
