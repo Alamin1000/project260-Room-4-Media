@@ -141,13 +141,40 @@ p:last-child{
   transition: 0.3s;
 }
 .main-menu:not(:hover) > ul > li > a.active,
-.main-menu > ul > li > a:hover {
+.main-menu > ul > li:hover > a {
   background: var(--theme__color1);
   color: #fff;
 }
 .main-menu > ul > li > a .chevron {
   font-size: 9px;
   margin: 0 0 0 4px;
+}
+.main-menu > ul > li .dropdown-menu {
+  padding: 0;
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.main-menu > ul > li:hover .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  border: 0;
+}
+.main-menu > ul > li  .dropdown-menu > ul > li > a {
+  padding: 12px 18px;
+  border-bottom: 1px solid rgb(217, 215, 233);
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+  transition: 0.3s;
+}
+.main-menu > ul > li  .dropdown-menu > ul > li > a:hover {
+  background: var(--theme__color1);
+  color: #fff;
+}
+.main-menu > ul > li  .dropdown-menu > ul > li:last-child > a {
+  border-bottom: none;
 }
 /* header-end */
 
