@@ -22,23 +22,60 @@
 
 		<!-- offcanvas-start -->
 		<div class="offcanvas-menu">
-			<ul class="offmenu" id="menuParent">
-				<a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-				<li class="active"><a href="#">HOME</a></li>
-				<li><a href="#">ABOUT US</a></li>
-				<li class="dropdown">
-					<a href="#" data-bs-toggle="collapse" data-bs-target='#drop-menu1'>OUR HORSES</a>
-					<div class="dropdown-menu-custom collapse" id="drop-menu1" data-bs-parent="#menuParent">
-						<ul>
-							<li><a href="#">YEARLINGS</a></li>
-							<li><a href="#">2 YEAR OLDS</a></li>
-							<li><a href="#">3 YEAR OLD PLUS</a></li>
-						</ul>
-					</div>
-				</li>
-				<li><a href="#">LATEST NEWS</a></li>
-				<li><a href="#">CONTACT & FIND US</a></li>
-			</ul>
+			<div class="offmenu" id="menuParent">
+				<a href="#" class="offcanvas-close"><i class="far fa-times"></i></a>
+				
+				<ul class="mobile-menu">
+					<li><a class="active" href="#">HOME</a></li>
+					<li class="dropdown">
+						<a href="#" data-bs-toggle="collapse" data-bs-target='#drop-menu1'>
+							<span class="txt">
+								VIDEO
+							</span>
+							<i class="far fa-chevron-down chevron"></i>
+						</a>
+						<div class="dropdown-menu-custom collapse" id="drop-menu1" data-bs-parent="#menuParent">
+							<ul>
+								<li><a href="#">Option 1</a></li>
+								<li><a href="#">Option 2</a></li>
+								<li><a href="#">Option 3</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#" data-bs-toggle="collapse" data-bs-target='#drop-menu2'>
+							<span class="txt">
+								MARKETING
+							</span>
+							<i class="far fa-chevron-down chevron"></i>
+						</a>
+						<div class="dropdown-menu-custom collapse" id="drop-menu2" data-bs-parent="#menuParent">
+							<ul>
+								<li><a href="#">Option 1</a></li>
+								<li><a href="#">Option 2</a></li>
+								<li><a href="#">Option 3</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="dropdown">
+						<a href="#"  data-bs-toggle="collapse" data-bs-target='#drop-menu3'>
+							<span class="txt">
+								WORK
+							</span>
+							<i class="far fa-chevron-down chevron"></i>
+						</a>
+						<div class="dropdown-menu-custom collapse" id="drop-menu3" data-bs-parent="#menuParent">
+							<ul>
+								<li><a href="#">Option 1</a></li>
+								<li><a href="#">Option 2</a></li>
+								<li><a href="#">Option 3</a></li>
+							</ul>
+						</div>
+					</li>
+					<li><a href="#">ABOUT US</a></li>
+					<li><a href="#">CONTACT US</a></li>
+				</ul>
+			</div>
 		</div>
 		<div class="offcanvas-overlay"></div>
 		<!-- offcanvas-start-end -->
@@ -52,7 +89,7 @@
 							<img src="images/logo.svg" alt="">
 						</a>
 	
-						<div class="main-menu">
+						<div class="main-menu d-lg-block d-none">
 							<ul>
 								<li><a class="active" href="#">HOME</a></li>
 								<li>
@@ -83,6 +120,10 @@
 								<li><a href="#">CONTACT US</a></li>
 							</ul>
 						</div>
+
+						<a href="#" class="offcanvas-open d-lg-none">
+							<i class="far fa-bars"></i>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -115,7 +156,7 @@
 
 
 			<!-- client-brand-section -->
-			<section class="client-brand-section">
+			<section class="client-brand-section pb-0">
 				<div class="container">
 					<div class="client-brand-section__inner">
 
@@ -201,7 +242,7 @@
 								<div class="creative__rml-menu">
 									<ul class="nav">
 										<li>
-											<a href="#">
+											<a href="#" class="active">
 												<div class="icon">
 													<img src="images/creative__rml-menu-1.png" alt="">
 												</div>
@@ -374,7 +415,7 @@
 
 
 			<!-- plan-section -->
-			<section class="plan-section">
+			<section class="plan-section pb-0">
 				<div class="container">
 					<div class="plan-section__inner">
 
@@ -385,8 +426,10 @@
 						<div class="plan__m-row">
 							<div class="plan__mr__left">
 								<div class="plan__dt-box">
-									<h4>Fully managed scalable team built to produce cost-effective graphic and video content in a timely manner.</h4>
-
+									<div class="plan__dt-box__title">
+										<h4>Fully managed scalable team built to produce cost-effective graphic and video content in a timely manner.</h4>
+									</div>
+									
 									<div class="plan__dt-box__data-g">
 										<h4>Included in the hourly fee</h4>
 										<ul class="check-ul">
@@ -416,53 +459,119 @@
 									</ul>
 								</div>
 
-								<div class="plans_wrapper_box">
-									<div class="plans_wrapper">
-										<!-- plan-single -->
-										<div class="plan__single">
-											<div class="plan__single__left">
-												<h3>Starter plan</h3>
-												<div class="check-ul">
-													<li>80 production hours</li>
+								<div class="plans_wrapper_tab-content tab-content">
+
+									<!-- plans_wrapper_tab-pane -->
+									<div class="plans_wrapper_tab-pane tab-pane show active fade" id="plan_Quarterly">
+										<div class="plans_wrapper_box">
+											<div class="plans_wrapper">
+												<!-- plan-single -->
+												<div class="plan__single">
+													<div class="plan__single__left">
+														<h3>Starter plan</h3>
+														<ul class="check-ul">
+															<li>80 production hours</li>
+														</ul>
+													</div>
+													<div class="plan__single__right">
+														<p class="price">$3600/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$45 p/h</p>
+													</div>
 												</div>
+												<!-- plan-single-end -->
+												<!-- plan-single -->
+												<div class="plan__single">
+													<div class="plan__single__left">
+														<h3>Medium plan</h3>
+														<ul class="check-ul">
+															<li>150 production hours</li>
+														</ul>
+													</div>
+													<div class="plan__single__right">
+														<p class="price">$6000/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$40 p/h</p>
+													</div>
+												</div>
+												<!-- plan-single-end -->
+												<!-- plan-single -->
+												<div class="plan__single">
+													<div class="plan__single__left">
+														<h3>Professional plan</h3>
+														<ul class="check-ul">
+															<li>250 production hours</li>
+														</ul>
+													</div>
+													<div class="plan__single__right">
+														<p class="price">$8,750/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$35 p/h</p>
+													</div>
+												</div>
+												<!-- plan-single-end -->
 											</div>
-											<div class="plan__single__right">
-												<p class="price">$3600<span class="ti-pe">mo</span></p>
-												<p class="price-sm">$45 p/h</p>
+											<div class="plans_wrapper_box_bottom">
+												<a href="#" class="button default-button w-100">Book a Discovery Call</a>
 											</div>
 										</div>
-										<!-- plan-single-end -->
-										<!-- plan-single -->
-										<div class="plan__single">
-											<div class="plan__single__left">
-												<h3>Medium plan</h3>
-												<div class="check-ul">
-													<li>150 production hours</li>
-												</div>
-											</div>
-											<div class="plan__single__right">
-												<p class="price">$6000<span class="ti-pe">mo</span></p>
-												<p class="price-sm">$40 p/h</p>
-											</div>
-										</div>
-										<!-- plan-single-end -->
-										<!-- plan-single -->
-										<div class="plan__single">
-											<div class="plan__single__left">
-												<h3>Professional plan</h3>
-												<div class="check-ul">
-													<li>250 production hours</li>
-												</div>
-											</div>
-											<div class="plan__single__right">
-												<p class="price">$8,750<span class="ti-pe">mo</span></p>
-												<p class="price-sm">$35 p/h</p>
-											</div>
-										</div>
-										<!-- plan-single-end -->
 									</div>
-									<a href="#" class="bottom-button default-button">Book a Discovery Call</a>
+									<!-- plans_wrapper_tab-pane-end -->
+
+									<!-- plans_wrapper_tab-pane -->
+									<div class="plans_wrapper_tab-pane tab-pane fade" id="plan_monthly">
+										<div class="plans_wrapper_box">
+											<div class="plans_wrapper">
+												<!-- plan-single -->
+												<div class="plan__single">
+													<div class="plan__single__left">
+														<h3>Starter plan</h3>
+														<ul class="check-ul">
+															<li>80 production hours</li>
+														</ul>
+													</div>
+													<div class="plan__single__right">
+														<p class="price">$900/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$60 p/h</p>
+													</div>
+												</div>
+												<!-- plan-single-end -->
+												<!-- plan-single -->
+												<div class="plan__single">
+													<div class="plan__single__left">
+														<h3>Medium plan</h3>
+														<ul class="check-ul">
+															<li>150 production hours</li>
+														</ul>
+													</div>
+													<div class="plan__single__right">
+														<p class="price">$1400/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$50 p/h</p>
+													</div>
+												</div>
+												<!-- plan-single-end -->
+												<!-- plan-single -->
+												<div class="plan__single">
+													<div class="plan__single__left">
+														<h3>Professional plan</h3>
+														<ul class="check-ul">
+															<li>250 production hours</li>
+														</ul>
+													</div>
+													<div class="plan__single__right">
+														<p class="price">$2000/<span class="ti-pe">mo</span></p>
+														<p class="price-sm">$45 p/h</p>
+													</div>
+												</div>
+												<!-- plan-single-end -->
+											</div>
+											<div class="plans_wrapper_box_bottom">
+												<a href="#" class="button default-button w-100">Book a Discovery Call</a>
+											</div>
+										</div>
+									</div>
+									<!-- plans_wrapper_tab-pane-end -->
+
 								</div>
+
+								
 							</div>
 						</div>
 
@@ -473,10 +582,10 @@
 
 
 			<!-- cta-banner-section -->
-			<section class="cta-banner-section">
+			<section class="cta-banner-section pb-0">
 				<div class="container">
 					<div class="cta-banner-section__inner">
-						<div class="cta-banner-_content">
+						<div class="cta-banner__content">
 							<h2>Looking for a full-time dedicated team?</h2>
 							<p>Select talent required. Specify the number of hours required per month. Pay monthly</p>
 							<a href="#" class="bottom-button default-button default-button--white">Get an estimate</a>
@@ -552,18 +661,21 @@
 								<li>
 									<a href="TEL:+5714100609">
 										<span class="underline">Bogotá:</span>
+										&nbsp;
 										<span class="underline">+571 410 0609</span>
 									</a>
 								</li>
 								<li>
 									<a href="TEL:+16503858923">
 										<span class="underline">USA:</span>
+										&nbsp;
 										<span class="underline">+1 650 385 8923</span>
 									</a>
 								</li>
 								<li>
 									<a href="TEL:+442032876729">
 										<span class="underline">UK:</span>
+										&nbsp;
 										<span class="underline">+44 203 287 6729</span>
 									</a>
 								</li>
@@ -590,7 +702,7 @@
 							</ul>
 						</div>
 						<div class="footer__top__column footer__top__column--3">
-							<h4>&nbsp;</h4>
+							<h4 class="d-md-block d-none">&nbsp;</h4>
 							<ul class="footer_menu">
 								<li><a href="#">• Client Testimonials</a></li>
 								<li><a href="#">• Blog</a></li>

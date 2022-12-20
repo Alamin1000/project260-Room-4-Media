@@ -1,22 +1,346 @@
 
 
 @media (max-width: 1399px) {
- 
+    .header__logo {
+        width: 90px;
+    }
+    .main-menu > ul > li > a {
+        height: 65px;
+        font-size: 13px;
+        padding: 13px;
+    }
+    .main-menu > ul {
+        gap: 6px;
+    }
+
+    body {
+        font-size: 14px;
+    }
+    .hero__content .h1 {
+        font-size: 37px;
+        margin: 0 0 20px;
+    }
+    .hero__content h3 {
+        font-size: 28px;
+    }
+    .default-button {
+        min-height: 50px;
+        padding: 9px 20px;
+        font-size: 14px;
+        border-radius: 3px;
+    }
+    .default-button .caret {
+        margin: 0 0 0 12px;
+    }
+    .hero__content__bottom-buttons {
+        margin: 40px 0 0;
+        gap: 18px;
+    }
+    .hero-section__inner {
+        padding: 165px 0 150px;
+    }
+
+    .h2 {
+        font-size: 25px;
+        margin: 0 0 12px;
+    }
+    .h3 {
+        font-size: 22px;
+    }
+    .sec-title {
+        margin: 0 0 35px;
+    }
+    .client-brand-section {
+        padding: 70px 0;
+    }
+    .client-brand img {
+        height: 50px;
+    }
+
+
+    .creative__rml-menu ul li a {
+        padding: 8px 10px;
+        height: 42px;
+        font-size: 14px;
+    }
+    .creative__rml-menu {
+        padding: 6px;
+    }
+    .creative__rml-menu ul li a .icon {
+        width: 15px;
+        margin: 0 9px 0 0;
+    }
+    .creative-section {
+        padding: 75px 0;
+    }
+
+    .how-work-section {
+        padding: 45px 0;
+    }
+    .how-work__item__title__icon {
+        width: 45px;
+        margin: 0 16px 0 0;
+    }
+    .how-work__item__title__text h3 {
+        font-size: 21px;
+    }
+    .how-work__item__title {
+        margin: 0 0 15px;
+    }
+    .how-work__item {
+        padding: 25px 25px;
+        border-radius: 5px;
+    }
+    .how-work-wrapper {
+        grid-gap: 18px;
+    }
+
+
+    .plan-section {
+        padding: 70px 0;
+    }
+    .plan__dt-box__title h4 {
+        font-size: 18px;
+    }
+    .plan__dt-box__title {
+        margin: 0 0 25px;
+    }
+    .plan__dt-box__data-g h4 {
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+    .check-ul li {
+        margin-bottom: 8px;
+        padding-left: 25px;
+    }
+    .plan__dt-box {
+        padding: 30px 25px;
+    }
+    .plan__dt-box__data-g {
+        margin-bottom: 25px;
+    }
+    .plan__mr__left {
+        margin: 0 25px 0 0;
+    }
+    .var-nav ul li a {
+        min-height: 48px;
+        padding: 8px;
+        border-radius: 5px;
+    }
+    .var-nav {
+        margin: 0 0 22px;
+        padding: 3px;
+        border-radius: 6px;
+    }
+    .plan__single__left h3 {
+        font-size: 19px;
+        margin: 0 0 11px;
+    }
+    .plan__single__right .price {
+        font-size: 19px;
+        margin: 0 0 6px;
+    }
+    .plan__single__right .price-sm {
+        font-size: 15px;
+    }
+    .plan__single {
+        padding: 28px 25px;
+    }
+    .plans_wrapper_box_bottom .button {
+        min-height: 62px;
+        font-size: 20px;
+    }
+    .plans_wrapper_box_bottom {
+        padding: 35px 25px 40px;
+    }
+
+
+    .cta-banner-section {
+        padding: 70px 0;
+    }
+    .cta-banner__content h2 {
+        font-size: 32px;
+        margin: 0 0 14px;
+    }
+    .cta-banner__content p {
+        font-size: 15px;
+    }
+    .cta-banner__content .bottom-button {
+        margin: 15px 0 0;
+        border-radius: 5px;
+    }
+    .cta-banner__content {
+        padding: 60px 30px;
+        min-height: 310px;
+    }
+
+
+    .promise-section {
+        padding: 80px 0;
+    }
+    .promise-card__logo img {
+        width: 130px;
+    }
+    .promise-card__logo {
+        margin: 0px 0 15px;
+    }
+    .promise-card__content h3 {
+        font-size: 17px;
+        margin: 0 0 14px;
+    }
+    .promise-card {
+        padding: 30px 25px 28px;
+    }
+
+
 }
 
 
 @media (max-width: 1199px) {
- 
+    .how-work-section__inner {
+        padding: 0;
+    }
+    .plan-section__inner {
+        padding: 0;
+    }
+    .plan__single {
+        padding: 26px 25px;
+    }
+
+    .footer__top-row {
+        padding-left: 90px;
+    }
 }
 
 
 @media (max-width: 991px) {
- 
+    .header-section__inner {
+        height: 60px;
+    }
+
+    .hero__content .h1 {
+        font-size: 30px;
+        margin: 0 0 16px;
+    }
+    .hero__content h3 {
+        font-size: 22px;
+    }
+    .hero-section__inner {
+        padding: 100px 0 90px;
+    }
+    .hero__content__bottom-buttons {
+        margin: 35px 0 0;
+        gap: 10px;
+    }
+    .default-button {
+        min-height: 39px;
+        padding: 8px 15px;
+        font-size: 13px;
+        border-radius: 3px;
+    }
+
+    .client-brand img {
+        height: 35px;
+    }
+    .h2 {
+        font-size: 20px;
+        margin: 0 0 8px;
+    }
+    .h3 {
+        font-size: 18px;
+    }
+    .sec-title {
+        margin: 0 0 25px;
+    }
+    .creative__row-main {
+        flex-wrap: wrap;
+    }
+    .creative__rm__left {
+        width: 100%;
+        margin: 25px 0px 0 0;
+    }
+    .creative__rm__right {
+        width: 100%;
+        order:-1;
+    }
+
+    .how-work-wrapper {
+        grid-template-columns: repeat(1,1fr);
+        grid-gap: 25px;
+    }
+
+
+    .plan__m-row {
+        flex-wrap: wrap;
+    }
+    .plan__mr__left {
+        order: 2;
+        width: 100%;
+        margin: 25px 0 0;
+    }
+    .plan__mr__right {
+        width: 100%;
+    }
+
+    .promise-card-wrapper {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .footer__top-row {
+        padding-left: 0;
+    }
 }
 
 
 @media (max-width: 768px) {
- 
+    .hero__content .h1 {
+        font-size: 22px;
+        margin: 0 0 10px;
+    }
+    .hero__content h3 {
+        font-size: 16px;
+    }
+
+    .h2 {
+        font-size: 18px;
+    }
+
+    .plans_wrapper_box_bottom .button {
+        min-height: 52px;
+        font-size: 16px;
+    }
+    .plans_wrapper_box_bottom {
+        padding: 27px 20px 25px;
+    }
+    .plan__single {
+        padding: 15px 12px;
+    }
+
+    .plan__dt-box {
+        padding: 20px 15px;
+    }
+
+    .cta-banner__content h2 {
+        font-size: 22px;
+        margin: 0 0 14px;
+    }
+    .promise-card {
+        padding: 20px 15px 22px;
+    }
+
+
+    .footer__top-row {
+        padding-left: 30px;
+        flex-wrap: wrap;
+    }
+    .footer__top__column {
+        width: 100%;
+        margin: 0 0 35px;
+    }
+    .footer__bottom-row {
+        margin: 5px auto 0;
+    }
 }
 
 
@@ -25,6 +349,19 @@
 }
 
 
-@media (max-width: 390px) {
- 
+@media (max-width: 370px) {
+    .hero__content h3 {
+        font-size: 15px;
+    }
+    .hero__content .h1 {
+        font-size: 18px;
+        margin: 0 0 10px;
+    }
+    .var-nav ul li a {
+        font-size: 13px;
+    }
+    .footer__top-row {
+        padding-left: 10px;
+        flex-wrap: wrap
+    }
 }
