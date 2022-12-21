@@ -177,7 +177,7 @@ p:last-child{
   color: #fff;
 }
 .main-menu > ul > li  .dropdown-menu > ul > li > a:hover {
-  background: var(--theme__color2);
+  background: #DF5A01;
 }
 .main-menu > ul > li  .dropdown-menu > ul > li:last-child > a {
   border-bottom: none;
